@@ -14,3 +14,18 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{pdfpages}
 \usepackage[]{ragged2e}
+
+% Für Verweise innerhalb Doc (siehe https://strobelstefan.org/?p=145) -> funktioniert nicht mich package hyperref!
+%------------------------------------------------
+\usepackage{csquotes}
+\usepackage{prettyref}
+\usepackage{titleref}
+%%% Für Abschnitte %%%
+\newrefformat{sec}{siehe Abschnitt~\ref{#1} \enquote{\titleref{#1}} \ auf Seite \pageref{#1}}
+%%% Für Abbildungen %%%
+\newrefformat{fig}{siehe Abb.~\ref{#1} \enquote{\titleref{#1}} \ auf Seite \pageref{#1}}
+%%% Für Tabellen %%%
+\newrefformat{tab}{siehe Tab.~\ref{#1} \enquote{\titleref{#1}} \ auf Seite \pageref{#1}}    
+    
+
+
