@@ -9,6 +9,9 @@ Bindungsstil, Stress und Wohlbefinden - Faktoren des Medienverhaltens von Eltern
 
 \include{content/0_abstract.tex}
 
+\makenoidxglossaries % use TeX to sort
+\loadglsentries{content/glossar.tex}
+
 \begin{document}
 
 
@@ -18,12 +21,27 @@ Bindungsstil, Stress und Wohlbefinden - Faktoren des Medienverhaltens von Eltern
 %\maketitle % für Disposition weglassen
 
 % Inhaltsverzeichnis
+\setcounter{page}{1}
+\pagenumbering{Roman}
+%\renewcommand*\contentsname{\hfill Inhalt \hfill}
+%\maxtocdepth{section}
+\tableofcontents
+\newpage
 
 % Abbildungsverzeichnis? nicht nach DGP
+\listoffigures
+\newpage
 
 % Tabellenverzeichnis? nicht nach DGP
+\listoftables
+\newpage
 
-% Abkürzungsverzeichnis? nicht nach DGP
+% Abkürzungsverzeichnis nicht nach DGP
+\printnoidxglossary[sort=word, title={Abkürzungsverzeichnis}]% list all entries
+\newpage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
 
 % Theorie
 \section{Theorie}\label{sec:Theorie}
