@@ -26,17 +26,17 @@ Bei den soziodemografischen Daten wurden folgende Parameter erfasst: Geschlecht,
 \subsubsection{Medien und Mediennutzung}\label{sec:MedienMediennutzung}
 Die Fragebogenitems wurden basierend auf den Vorlagen der Erhebungsinstrumenten der Studien \citeA{Feierabend2017, Blikk2017, Waller2016, Suter2015, Feierabend2015, Kabali2015} neu erstellt. Dabei stand die Mediennutzungszeit während der Betreuung der Kinder, also die Dauer der Mediennutzung in Minuten und das dazu verwendeten Geräte und Medium im Fokus. Es erfolgte ein Spezifizierung des Frageitems hinsichtlich des betreuten Kindes, ob dieses wach war oder geschlafen hat und hinsichtlich des benutzen Mediums, ob dieses privat oder geschäftlich genutzt wurde. Die Erfassung der Mediennutzungszeit wurde anhand der letzten Betreuungstätigkeit vorgenommen, da davon ausgegangen wurde, dass sich die Befragten am ehesten an die absolute Zeit erinnern konnten. Eine Unterteilung in Tage unter der Woche oder am Wochenende wurde als wenig zielführend erachtet. Für die Beantwortung der Fragestellung hätte bereits die reine Mediennutzungszeit gereicht. Es wurde jedoch als hilfreich erachtet, zusätzliche Parameter zu der reinen Mediennutzungsdauer zu erheben, um gegebenenfalls die Fragestellung detaillierter beantworten zu können. Ein weiterer Grund für die zusätzlichen Fragebogenitems ist hinsichtlich der spärlichen Datenlage im Bereich Mediennutzung von Eltern mit Kleinkindern zu nennen. Erfasst wurden neben dem benutzen Medium und der aufgewendeten Zeit, die im Haushalt vorhanden Geräte und auf welches der benutzen Geräte während der Betreuung am wenigsten verzichtet werden konnte. 
 
-Die Operationalisiserung erfolgte anhand der Summenbildung der verwendeten Medien in Minuten, während denen das Kind betreut wurde (für eine Auflsitung der abgefragten Medien siehe Anhang \ref{app:Fragebogen} im Abschnitt \titleref{sec:app_mediennutzung} unter Mediennutzung). Diese Gesamtsumme $M~Summe_{Total}$ setzt sich aus den Teilsummen der Mediennutzung zusammen, an denen das Kind geschlafen hat oder wach war.  
+Die Operationalisiserung erfolgte anhand der Summenbildung der verwendeten Medien in Minuten, während denen das Kind betreut wurde (für eine Auflsitung der abgefragten Medien siehe Anhang \ref{app:Fragebogen} im Abschnitt \titleref{sec:app_mediennutzung} unter Mediennutzung). Diese Gesamtsumme der Mediennutzung $MNS_{Total}$ (\ref{eq:MedienTotal}) setzt sich aus den Teilsummen der genutzten  Medien zusammen, an denen das Kind wach war $MNS_{Wach}$ (\ref{eq:MedienWach}) oder geschlafen hat $MNS_{Geschlafen}$ (\ref{eq:MedienGeschlafen}).  
 
 %Formel
 \begin{equation}\label{eq:MedienWach}
-    M~Summe_{Wach}=\sum_{i=1}^{11} i_{Wach}
+    MNS_{Wach}=\sum_{i=1}^{11} i_{Wach}
 \end{equation}
 \begin{equation}\label{eq:MedienGeschlafen}
-    M~Summe_{Geschlafen}=\sum_{i=1}^{11} i_{Geschlafen}
+    MNS_{Geschlafen}=\sum_{i=1}^{11} i_{Geschlafen}
 \end{equation}
 \begin{equation}\label{eq:MedienTotal}
-    M~Summe_{Total}=\sum_{i=1}^{11} i_{Wach} + i_{Geschlafen}
+    MNS_{Total}=\sum_{i=1}^{11} i_{Wach} + i_{Geschlafen}
 \end{equation}
 
 \subsubsection{Bindung: Adult Attachment Scale (AAS)}\label{sec:AAS}
@@ -49,13 +49,13 @@ Gemäss der Prüfung der Faktorenstruktur des AAS durch \citeA{Schmidt2004} wurd
 Die Operationalisiserung erfolgte anhand der Indizes für die drei Skalen Nähe, Vertrauen und Angst (siehe Formel \ref{eq:IndexNähe}, \ref{eq:IndexVertrauen}, \ref{eq:IndexAngst}). Dabei wurden die Mittelwerte aus den Skalenzugehörigen Items anhand des Likertskalenwerts 1 bis 5 jeder Person berechnet. Zu beachten ist, dass alle Items in der Skala Nähe und die Items $AAS_{5}$, $AAS_{10}$, $AAS_{15}$ und $AAS_{17}$ der Skala Vertrauen für die Erstellung des Skalenwerts umkodiert werden müssen (im Anhang \ref{app:AAS} mit einem * gekennzeichnet). Je höher die Mittelwerte der Skalen, desto grösser die entsprechende Ausprägung. Tendenziell heisst das bei der Skala Nähe, dass Menschen mit einem hohen Wert, sich bei Nähe zu anderen Menschen eher wohl fühlen. Hohe Ausprägungen bei der Skala Vertrauen geht tendenziell mit einem grösseren Vertrauen anderen Menschen gegenüber einher. Je höher die Werte der Skala Angst, desto eher fürchtet sich ein Mensch alleine gelassen zu werden.
 %Formel
 \begin{equation}\label{eq:IndexNähe}
-    AAS~I_{\text{\textit{N{\"a}he}}}=6-\frac{AAS_{3}+AAS_{8}+AAS_{13}+AAS_{14}+AAS_{18}}{5}
+    AAS_{\text{\textit{N{\"a}he}}}=6-\frac{AAS_{3}+AAS_{8}+AAS_{13}+AAS_{14}+AAS_{18}}{5}
 \end{equation}
 \begin{equation}\label{eq:IndexVertrauen}
-    AAS~I_{Vertrauen}=\frac{AAS_{1}+(6-AAS_{5})+(6-AAS_{10})+AAS_{12}+(6-AAS_{15})+(6-AAS_{17})}{6}
+    AAS_{Vertrauen}=\frac{AAS_{1}+(6-AAS_{5})+(6-AAS_{10})+AAS_{12}+(6-AAS_{15})+(6-AAS_{17})}{6}
 \end{equation}
 \begin{equation}\label{eq:IndexAngst}
-    AAS~I_{Angst}=\frac{AAS_{4}+AAS_{6}+AAS_{7}+AAS_{11}+AAS_{16}}{5}
+    AAS_{Angst}=\frac{AAS_{4}+AAS_{6}+AAS_{7}+AAS_{11}+AAS_{16}}{5}
 \end{equation}
 
 Wie bereits oben beschrieben, lassen sich gemäss \citeA{Schmidt2004} mit dem deutschen Instrument die Bindungsstile nicht direkt zuordnen, sondern in zugrunde liegende Dimensionen einteilen \cite{Schuetzmann2004}. Anhand den Ausprägungen der Probanden in den drei Skalen lassen sich drei Cluster definieren: Im Cluster \textit{sicher} sind Probanden mit hohen Werten bei den Skalen Nähe und Vertrauen und niedrige Werte bei der Skala Angst enthalten. Das Cluster \textit{ängstlich} beinhaltet Probanden mit hohen Werten bei der Skala Angst und mittlere Werte bei den Skalen Nähe und Vertrauen. Im dritten Cluster \textit{vermeidend} befinden sich Probanden, die auf allen drei Skalen Nähe, Vertrauen und Angst tiefe Werte aufweisen.
@@ -73,16 +73,16 @@ Die Operationalisierung erfolgte anhand der Anleitung von \citeA{Naescher2009}. 
 
 %Formel
 \begin{equation}\label{eq:PSQIndexSorgen}
-    PSQ~I_{Sorgen}=\frac{\frac{PSQ_{05}+PSQ_{07}+PSQ_{10}+PSQ_{13}+PSQ_{15}}{5}-1}{3}*100
+    PSQ_{Sorgen}=\frac{\frac{PSQ_{05}+PSQ_{07}+PSQ_{10}+PSQ_{13}+PSQ_{15}}{5}-1}{3}*100
 \end{equation}
 \begin{equation}\label{eq:PSQIndexAnspannung}
-    PSQ~I_{Anspannung}=\frac{\frac{(5-PSQ_{01})+(5-PSQ_{06})+PSQ_{09}+PSQ_{17}+PSQ_{18}}{5}-1}{3}*100
+    PSQ_{Anspannung}=\frac{\frac{(5-PSQ_{01})+(5-PSQ_{06})+PSQ_{09}+PSQ_{17}+PSQ_{18}}{5}-1}{3}*100
 \end{equation}
 \begin{equation}\label{eq:PSQIndexFreude}
-    PSQ~I_{Freude}=\frac{\frac{PSQ_{04}+PSQ_{08}+PSQ_{12}+PSQ_{14}+PSQ_{16}}{5}-1}{3}*100
+    PSQ_{Freude}=\frac{\frac{PSQ_{04}+PSQ_{08}+PSQ_{12}+PSQ_{14}+PSQ_{16}}{5}-1}{3}*100
 \end{equation}
 \begin{equation}\label{eq:PSQIndexAnforderung}
-    PSQ~I_{Anforderung}=\frac{\frac{PSQ_{02}+PSQ_{03}+PSQ_{11}+(5-PSQ_{19})+PSQ_{20}}{5}-1}{3}*100
+    PSQ_{Anforderung}=\frac{\frac{PSQ_{02}+PSQ_{03}+PSQ_{11}+(5-PSQ_{19})+PSQ_{20}}{5}-1}{3}*100
 \end{equation}
 
 Zu beachten ist, dass gewisse Items für die Berechnung der Indizes umkodiert werden müssen. Hierbei handelt es sich um die drei Items $PSQ_{01}$, $PSQ_{06}$ und $PSQ_{19}$ (im Anhang \ref{app:PSQ} mit einem * gekennzeichnet).
@@ -93,7 +93,7 @@ Für den Gesamtscore muss die Skala Freude umkodiert werden:
 
 %Formel
 \begin{equation}\label{eq:PSQGesamtscore}
-    PSQ~I_{Gesamtscore}=\frac{PSQ~I_{Sorgen}+PSQ~I_{Anspannung}+ (100-PSQ~I_{Freude})+PSQ~I_{Anforderung}}{4}
+    PSQ_{Gesamtscore}=\frac{PSQ_{Sorgen}+PSQ_{Anspannung}+ (100-PSQ_{Freude})+PSQ_{Anforderung}}{4}
 \end{equation}
 
 In den Gesamtscore fliessen die oben berechneten Skalen ein und ergeben das allgemeine Stresserleben, respektive die aktuelle, subjektiv erlebte Belastung einer Person.
