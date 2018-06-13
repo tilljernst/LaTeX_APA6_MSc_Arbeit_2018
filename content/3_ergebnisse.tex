@@ -1,4 +1,35 @@
 \subsection{Vorbereitung der Daten und deskriptive Analysen}
+Die erhobenen Daten wurden mittels SPSS Version 25 für Mac OS X aufbereitet. Die Stichprobendaten wurden direkt aus der Enterprise Feedback Suite \cite{Questback2018} mittels Datenexport für SPSS exportiert. Allfällige Fehlerquellen wurden bei der Datenbereinigung korrigiert. Dies wurde durch die Umfragesoftware erleichtert, indem nur abgeschlossene Datensätze exportiert wurden und eine erste Werteprüfung bereits bei der Eingabe erfolgte (z.B.: es wurden nur Zahlen bei der Eingabe des Jahrgangs zugelassen). Fehlende Werte wurden bereits von der Umfragesoftware gesetzt und konnten innerhalb von SPSS mit einem Wertelabel versehen werden. Für die Berechnung der Mediennutzung, der Bindung, des Stressniveaus und des subjektiven Wohlbefindens wurden zusätzliche Variablen in SPSS erstellt und anhand der generierten Daten berechnet (für die Formel der Berechnung siehe Kapitel \titleref{sec:Design}).
+
+\subsubsection{Medien und Mediennutzung}
+
+\begin{center}
+\begin{minipage}{\linewidth}
+    \centering
+\begin{tikzpicture}[scale=1.0, auto,swap]
+  \begin{axis}[title  = TitleTBD,
+    xbar,
+    y axis line style = { opacity = 0 },
+    axis x line       = none,
+    tickwidth         = 0pt,
+    enlarge y limits  = 0.5,
+    enlarge x limits  = 0.02,
+    ytick             = data,
+    height            = 10cm,
+    width             = 10cm,
+    symbolic y coords = {Smartphone, TV, Computer},
+    nodes near coords,
+  ]
+  \addplot coordinates { (60,Smartphone)(5,TV)(40,Computer)};
+  \addplot coordinates { (13,Smartphone)(1,TV)(22,Computer)};
+  \addplot coordinates { (44,Smartphone)(1,TV)(21,Computer)};
+  \addplot coordinates { (70,Smartphone)(5,TV)(11,Computer)};
+  \legend{privat, geschäftlich, privat \& geschäftlich, nicht benutzt}
+  \end{axis}
+\end{tikzpicture}
+\end{minipage}
+\end{center}
+
 \subsubsection{Bindung anhand AAS}
 \textit{TBD: Klassifizierung und Aufteilung in Sicher und Unsicher}.
 
