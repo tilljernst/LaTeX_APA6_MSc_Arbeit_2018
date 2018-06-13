@@ -26,7 +26,18 @@ Bei den soziodemografischen Daten wurden folgende Parameter erfasst: Geschlecht,
 \subsubsection{Medien und Mediennutzung}\label{sec:MedienMediennutzung}
 Die Fragebogenitems wurden basierend auf den Vorlagen der Erhebungsinstrumenten der Studien \citeA{Feierabend2017, Blikk2017, Waller2016, Suter2015, Feierabend2015, Kabali2015} neu erstellt. Dabei stand die Mediennutzungszeit während der Betreuung der Kinder, also die Dauer der Mediennutzung in Minuten und das dazu verwendeten Geräte und Medium im Fokus. Es erfolgte ein Spezifizierung des Frageitems hinsichtlich des betreuten Kindes, ob dieses wach war oder geschlafen hat und hinsichtlich des benutzen Mediums, ob dieses privat oder geschäftlich genutzt wurde. Die Erfassung der Mediennutzungszeit wurde anhand der letzten Betreuungstätigkeit vorgenommen, da davon ausgegangen wurde, dass sich die Befragten am ehesten an die absolute Zeit erinnern konnten. Eine Unterteilung in Tage unter der Woche oder am Wochenende wurde als wenig zielführend erachtet. Für die Beantwortung der Fragestellung hätte bereits die reine Mediennutzungszeit gereicht. Es wurde jedoch als hilfreich erachtet, zusätzliche Parameter zu der reinen Mediennutzungsdauer zu erheben, um gegebenenfalls die Fragestellung detaillierter beantworten zu können. Ein weiterer Grund für die zusätzlichen Fragebogenitems ist hinsichtlich der spärlichen Datenlage im Bereich Mediennutzung von Eltern mit Kleinkindern zu nennen. Erfasst wurden neben dem benutzen Medium und der aufgewendeten Zeit, die im Haushalt vorhanden Geräte und auf welches der benutzen Geräte während der Betreuung am wenigsten verzichtet werden konnte. 
 
-\textit{TBD: Operationalisierung - e.g. Gesamtzeit in Minuten, gegliedert nach Medium, etc.}
+Die Operationalisiserung erfolgte anhand der Summenbildung der verwendeten Medien in Minuten, während denen das Kind betreut wurde (für eine Auflsitung der abgefragten Medien siehe Anhang \ref{app:Fragebogen} im Abschnitt \titleref{sec:app_mediennutzung} unter Mediennutzung). Diese Gesamtsumme $M~Summe_{Total}$ setzt sich aus den Teilsummen der Mediennutzung zusammen, an denen das Kind geschlafen hat oder wach war.  
+
+%Formel
+\begin{equation}\label{eq:MedienWach}
+    M~Summe_{Wach}=\sum_{i=1}^{11} i_{Wach}
+\end{equation}
+\begin{equation}\label{eq:MedienGeschlafen}
+    M~Summe_{Geschlafen}=\sum_{i=1}^{11} i_{Geschlafen}
+\end{equation}
+\begin{equation}\label{eq:MedienTotal}
+    M~Summe_{Total}=\sum_{i=1}^{11} i_{Wach} + i_{Geschlafen}
+\end{equation}
 
 \subsubsection{Bindung: Adult Attachment Scale (AAS)}\label{sec:AAS}
 Für die Erfassung des Bindungsstils (\textit{engl. attachment}) wurde der von \citeA{Schmidt2004} ins Deutsche übersetzte Adult Attachment Scale (AAS) von \citeA{Collins1990} verwendet. Dieser versucht die Bindung über die Selbstbeschreibungsmasse zu erfassen, in Ahnlehnung an die 1-Item-Selbstbeschreibungsmasse von \citeA{Hazan1987}. Dabei gilt dieser gemäss \citeA{Fraley2000} als einer der weit verbreiteten Selbsterfassungsbögen im englischsprachigen Raum.
@@ -155,6 +166,9 @@ Bei der Angabe zum Familieneinkommen (siehe Tabelle \titleref{table:Gesamtstichp
 Im Durchschnitt leben zwischen 2 und 8 Personen im Haushalt mit einem Durchschnitt von 3.6 Personen ($SD$ = .8). Die dominante Lebensform stellt die verheiratete Partnerschaft mit 71.6\% ($n$ = 156) dar, gefolgt von der nicht verheirateten Partnerschaft mit 25.2\% ($n$ = 55). Die Kinder werden im Schnitt 1 Tag ($SD$ = 1.3)  zwischen 0 und 5 Tagen fremd betreut.
 
 Insgesamt haben 158 Personen am Wettbewerb teilgenommen, was 72.5\% der Stichprobe entspricht. Eine Person liess sich Versuchspersonen anrechnen (.5\%) und 59 (27\%) Personen wollten weder am Wettbewerb teilnehmen noch sich Versuchspersonenstunden anrechnen lassen.
+
+\subsection{Datenaufbereitung}\label{sec:Datenaufbereitung}
+Die erhobenen Daten wurden mittels SPSS Version 25 für Mac OS X aufbereitet. Die Stichprobendaten wurden direkt aus der Enterprise Feedback Suite \cite{Questback2018} mittels Datenexport für SPSS exportiert. Allfällige Fehlerquellen wurden bei der Datenbereinigung korrigiert. Dies wurde durch die Umfragesoftware erleichtert, indem nur abgeschlossene Datensätze exportiert wurden und eine erste Werteprüfung bereits bei der Eingabe erfolgte (z.B.: es wurden nur Zahlen bei der Eingabe des Jahrgangs zugelassen). Fehlende Werte wurden bereits von der Umfragesoftware gesetzt und konnten innerhalb von SPSS mit einem Wertelabel versehen werden. Für die Berechnung der Mediennutzung, der Bindung, des Stressniveaus und des subjektiven Wohlbefindens wurden zusätzliche Variablen in SPSS erstellt und anhand der generierten Daten berechnet (für die Formel der Berechnung siehe Kapitel \titleref{sec:Design}).
 
 \subsection{Empirische Hypothesen}\label{sec:EmpirischeHypothesen}
 \subsection{Statistische Analyseverfahren}
