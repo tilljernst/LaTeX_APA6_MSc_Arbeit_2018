@@ -3,32 +3,43 @@ Die erhobenen Daten wurden mittels SPSS Version 25 für Mac OS X aufbereitet. Di
 
 \subsubsection{Medien und Mediennutzung}
 
-\begin{center}
-\begin{minipage}{\linewidth}
-    \centering
+\begin{figure}
+\centering
 \begin{tikzpicture}[scale=1.0, auto,swap]
-  \begin{axis}[title  = TitleTBD,
+  \begin{axis}[title  = Medien \& Mediennutzung,
     xbar,
-    y axis line style = { opacity = 0 },
-    axis x line       = none,
+    %y axis line style = { opacity = 0 },
+    %axis x line       = none,
     tickwidth         = 0pt,
-    enlarge y limits  = 0.5,
+    xmin              = 0,
+    xmax              = 100,
+    enlarge y limits  = 0.3,
     enlarge x limits  = 0.02,
+    legend style={at={(0.5,-0.15)},
+		anchor=north},
     ytick             = data,
-    height            = 10cm,
-    width             = 10cm,
-    symbolic y coords = {Smartphone, TV, Computer},
+    %ylabel            = Population,
+    %xlabel            = {Mediennutzung},
+    height            = 8cm,
+    width             = 15cm,
+    symbolic y coords = {Computer, TV, Smartphone},
     nodes near coords,
+    nodes near coords align={horizontal},
   ]
-  \addplot coordinates { (60,Smartphone)(5,TV)(40,Computer)};
-  \addplot coordinates { (13,Smartphone)(1,TV)(22,Computer)};
-  \addplot coordinates { (44,Smartphone)(1,TV)(21,Computer)};
+  %privat
   \addplot coordinates { (70,Smartphone)(5,TV)(11,Computer)};
+  %geschäftlich
+  \addplot coordinates { (60,Smartphone)(5,TV)(40,Computer)};
+  %privat und geschäftlich
+  \addplot coordinates { (13,Smartphone)(1,TV)(22,Computer)};
+  %nicht benutzt
+  \addplot coordinates { (44,Smartphone)(1,TV)(21,Computer)};
+  
+  
   \legend{privat, geschäftlich, privat \& geschäftlich, nicht benutzt}
   \end{axis}
 \end{tikzpicture}
-\end{minipage}
-\end{center}
+\end{figure}
 
 \subsubsection{Bindung anhand AAS}
 \textit{TBD: Klassifizierung und Aufteilung in Sicher und Unsicher}.
