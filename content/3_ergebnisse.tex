@@ -33,10 +33,10 @@ Demzufolge gaben 97.2\% der Befragten an, das Smartphone während der Betreuung 
     nodes near coords align={horizontal},
   ]
   %benutzt
-  \addplot coordinates { (97.2,Smartphone)(31.7,TV)(42.2,Computer)(19.7,Tablet)(62.8,Radio)(68.8,Printmedien)(55,Foto)(4.1,Spielkonsole)(8.3,MP3)};
+  \addplot[draw=black,fill=cyan] coordinates { (97.2,Smartphone)(31.7,TV)(42.2,Computer)(19.7,Tablet)(62.8,Radio)(68.8,Printmedien)(55,Foto)(4.1,Spielkonsole)(8.3,MP3)};
   \addlegendentry{genutzt~}
   %nicht genutzt
-  \addplot coordinates { (2.8,Smartphone)(68.3,TV)(57.8,Computer)(80.3,Tablet)(37.2,Radio)(31.2,Printmedien)(45,Foto)(95.9,Spielkonsole)(91.7,MP3)};
+  \addplot[draw=black,fill=orange] coordinates { (2.8,Smartphone)(68.3,TV)(57.8,Computer)(80.3,Tablet)(37.2,Radio)(31.2,Printmedien)(45,Foto)(95.9,Spielkonsole)(91.7,MP3)};
   \addlegendentry{nicht genutzt}
   
   \end{axis}
@@ -91,10 +91,10 @@ Auf die einzelnen Medien verteilt bedeutet dies, dass die Probanden im Schnitt $
     nodes near coords align={horizontal},
   ]
   %wach
-  \addplot coordinates { (5.2,Telefonieren)(10,SMS)(1.7,Email)(5.3,Lesen)(5.9,Internet)(18.6,Musik)(5.4,TV)(34.3,Radio)(5.1,Fotos)(.2,VideoGames)(1.5,Hörspiele)};
+  \addplot[draw=black,fill=cyan] coordinates { (5.2,Telefonieren)(10,SMS)(1.7,Email)(5.3,Lesen)(5.9,Internet)(18.6,Musik)(5.4,TV)(34.3,Radio)(5.1,Fotos)(.2,VideoGames)(1.5,Hörspiele)};
   
-  %geschlafen
-  \addplot coordinates { (7.2,Telefonieren)(13.8,SMS)(7,Email)(12.5,Lesen)(19.7,Internet)(8.3,Musik)(25.1,TV)(12.9,Radio)(0.9,Fotos)(1.5,VideoGames)(2.1,Hörspiele)};
+  %schlafend
+  \addplot[draw=black,fill=orange] coordinates { (7.2,Telefonieren)(13.8,SMS)(7,Email)(12.5,Lesen)(19.7,Internet)(8.3,Musik)(25.1,TV)(12.9,Radio)(0.9,Fotos)(1.5,VideoGames)(2.1,Hörspiele)};
   
   \legend{\text{$M$ wach}, \text{$M$ schlafend}}
   \end{axis}
@@ -103,7 +103,7 @@ Auf die einzelnen Medien verteilt bedeutet dies, dass die Probanden im Schnitt $
 
 Neben der Mediennutzung und der Medientätigkeit wurde die Anzahl Geräte im Haushalt erfragt (siehe dazu Tabelle \ref{fig:AppGeräteHaushalt} im Anhang \ref{app:TablesMediennutzung}). Dabei gaben 83.9\% der Teilnehmer an, 2 Smartphones im Haushalt zu besitzen. 70.2\% gaben an, ein TV-Gerät zu besitzen. 45\% der Befragten besitzen 2 Computer (Desktop oder Laptop), 45.9\% ein Tablet und 48.2\% einen Radio (Stereoanlage, CD-Player). 51.4\% gaben an, kein Abo einer Tageszeitung oder eines Magazins aboniert zu haben. 45.9\% gaben an, einen Fotoapparat oder Videokamera zu besitzen. 61\% besitzen keine Spielkonsole und 67\% keinen MP3 Player.
 
-\textit{TBD: Medienverzicht}
+In der letzten Frage wurden von den Teilnehmern die drei Medien erhoben, auf die sie während der Betreuung ihres Kindes am wenigsten verzichten konnten. 85.3\% gaben an, nicht auf das Smartphone verzichten zu können, gefolgt vom Radio (Stereonalage, CD-Player) von 33.9\% und 25.2\% Foto- und Videokamera (siehe Tabelle \ref{fig:AppMedienverzicht} im Anhang \ref{app:TablesMediennutzung}). Weiter gaben die Teilnehmer an, dass 11.9\% von ihnen nicht auf den Fernseher, 9.6\% nicht auf das Abo einer Tageszeitung oder Zeitschrift, 8.3\% nicht auf den Computer (Laptop oder Desktop), 2.8\% nicht auf den MP3-Player, 2.3\% nicht auf das Tablet und .9\% nicht auf die Spielkonsole verzichten können.
 
 \subsubsection{Bindung anhand AAS}
 \textit{TBD: Klassifizierung und Aufteilung in Sicher und Unsicher}.
