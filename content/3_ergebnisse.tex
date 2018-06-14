@@ -2,44 +2,108 @@
 Die erhobenen Daten wurden mittels SPSS Version 25 für Mac OS X aufbereitet. Die Stichprobendaten wurden direkt aus der Enterprise Feedback Suite \cite{Questback2018} mittels Datenexport für SPSS exportiert. Allfällige Fehlerquellen wurden bei der Datenbereinigung korrigiert. Dies wurde durch die Umfragesoftware erleichtert, indem nur abgeschlossene Datensätze exportiert wurden und eine erste Werteprüfung bereits bei der Eingabe erfolgte (z.B.: es wurden nur Zahlen bei der Eingabe des Jahrgangs zugelassen). Fehlende Werte wurden bereits von der Umfragesoftware gesetzt und konnten innerhalb von SPSS mit einem Wertelabel versehen werden. Für die Berechnung der Mediennutzung, der Bindung, des Stressniveaus und des subjektiven Wohlbefindens wurden zusätzliche Variablen in SPSS erstellt und anhand der generierten Daten berechnet (für die Formel der Berechnung siehe Kapitel \titleref{sec:Design}).
 
 \subsubsection{Medien und Mediennutzung}
+Im Rahmen der Umfrage wurde die Mediennutzung während der Kindsbetreuung erhoben. Dabei wurde unterschieden zwischen \textit{privat genutzt}, \textit{geschäftlich genutzt}, \textit{privat \& geschäftlich genutzt} und \textit{nicht genutzt}. In Folge der Übersichtlichkeit wurde in Abbildung \ref{fig:MedienMediennutzung} die Ausprägung auf \textit{genutzt} und \textit{nicht genutzt} zusammengefasst, wobei die geschäftliche Nutzung in die private Nutzung miteinbezogen wurde (für die detaillierte Unterteilung anhand geschäfltich und privat bitte Anhang \ref{app:TablesMediennutzung} Abbildung \ref{fig:AppMedienMediennutzung} konsultieren).
 
-\begin{figure}
+Demzufolge gaben 97.2\% der Befragten an, das Smartphone während der Betreuung zu benutzen gegenüber 2.8\%, die das Smartphone während der Betreuung nicht benutzten. Beim Medium TV gaben 31.7\% gegenüber 68.3\% an, diesen zu nutzen. Den Computer (Laptop- oder Desktopcomputer) nutzten 42.4\% und das Tablet nutzten 19.7\% während der Betreuung. Den Radio (Stereoanlage, CD Player) nutzten 62.8\%, Printmedien (Buch, Zeitung, Heft, Comic) 68.8\% und die Foto- oder Videokamera nutzten 55\%. Die Spielkonsole wurde von 4.1\% der Befragten während der Betreuung genutzt und der MP3 Player von 8.3\%.
+
+% Figure
+\begin{figure}[htp]
+\caption{Medien \& Mediennutzung}\label{fig:MedienMediennutzung}
 \centering
-\begin{tikzpicture}[scale=1.0, auto,swap]
-  \begin{axis}[title  = Medien \& Mediennutzung,
-    xbar,
+\begin{tikzpicture}[scale=1, auto,swap]
+  \begin{axis}[
+    xbar stacked,
     %y axis line style = { opacity = 0 },
     %axis x line       = none,
     tickwidth         = 0pt,
     xmin              = 0,
-    xmax              = 100,
-    enlarge y limits  = 0.3,
+    xmax              = 105,
+    enlarge y limits  = 0.1,
     enlarge x limits  = 0.02,
-    legend style={at={(0.5,-0.15)},
-		anchor=north},
+    %/legend pos=south east,
+    legend style={at={(0.5,-0.13)}, anchor = north},
+    legend columns     = -1,
+    %reverse legend,
     ytick             = data,
-    %ylabel            = Population,
-    %xlabel            = {Mediennutzung},
-    height            = 8cm,
-    width             = 15cm,
-    symbolic y coords = {Computer, TV, Smartphone},
+    xlabel            = {Mediennutzung (\textit{Angaben in \%})},
+    %height            = 20cm,
+    width             = 14cm,
+    symbolic y coords = {MP3, Spielkonsole, Foto, Printmedien, Radio, Tablet, Computer, TV, Smartphone},
     nodes near coords,
     nodes near coords align={horizontal},
   ]
-  %privat
-  \addplot coordinates { (70,Smartphone)(5,TV)(11,Computer)};
-  %geschäftlich
-  \addplot coordinates { (60,Smartphone)(5,TV)(40,Computer)};
-  %privat und geschäftlich
-  \addplot coordinates { (13,Smartphone)(1,TV)(22,Computer)};
-  %nicht benutzt
-  \addplot coordinates { (44,Smartphone)(1,TV)(21,Computer)};
+  %benutzt
+  \addplot coordinates { (97.2,Smartphone)(31.7,TV)(42.2,Computer)(19.7,Tablet)(62.8,Radio)(68.8,Printmedien)(55,Foto)(4.1,Spielkonsole)(8.3,MP3)};
+  \addlegendentry{genutzt~}
+  %nicht genutzt
+  \addplot coordinates { (2.8,Smartphone)(68.3,TV)(57.8,Computer)(80.3,Tablet)(37.2,Radio)(31.2,Printmedien)(45,Foto)(95.9,Spielkonsole)(91.7,MP3)};
+  \addlegendentry{nicht genutzt}
   
-  
-  \legend{privat, geschäftlich, privat \& geschäftlich, nicht benutzt}
   \end{axis}
 \end{tikzpicture}
 \end{figure}
+
+Die Medientätigkeit in Minuten wurde anhand der letzten Betreuung erfasst. Dabei wurde unterschieden, ob das Kind wach war oder geschlafen hat. Der Mittelwert der Medientätigkeit während das Kind wach war belief sich auf $M$=93.1 Minuten ($SD$=103.6, $Min$=0, $Max$=613) und $M$=108.6 Minuten, währendem das Kind geschlafen hat ($SD$=105.3, $Min$=0, $Max$=495). Im Total waren die Teilnehmer im Schnitt $M$=202.1 Minuten mit Medien beschäftigt, währendem sie ihr Kind betreuten ($SD$=174.9, $Min$=3, $Max$=840) (Siehe dazu auch Tabelle \ref{table:Medientätigkeit}).
+
+%Table
+\begin{table}%[htbp]
+\begin{tabular}{m{2em} m{4em}  m{5em}  m{5em} m{5em}} 
+  \hline\hline
+  \multicolumn{5}{c}{\textbf{Total Medientätigkeit in Minuten}}\\
+  
+  & & wach & geschlafen & total\\
+  \hline
+  $N$ & Gültig & 208 & 205 & 204 \\
+  & Fehlend & 10 & 13 & 14\\
+  $M$ & & 93.1 & 108.6 & 202.1 \\
+  $SD$ & & 103.6 & 105.3 & 174.9 \\
+  $Min$ & & 0 & 0 & 3.0 \\
+  $Max$ & & 613 & 495 & 840 \\
+  \hline\hline
+  &&\\
+\end{tabular}
+\caption{Medientätigkeit}
+\label{table:Medientätigkeit}
+\end{table}
+
+Auf die einzelnen Medien verteilt bedeutet dies, dass die Probanden im Schnitt $M$=5.2 Minuten telefoniert haben, während dem das Kind wach war und $M$=7.2 Minuten währendem das Kind geschlafen hat (siehe dazu Abbildung \ref{fig:Medientätigkeit}). Im Schnitt haben die Teilnehmer $M$=10 Minuten mit Textnachrichten verbracht (lesen und schreiben) während das Kind war wach und $M$=13.8 Minuten währendem das Kind geschlafen hat. Für das bearbeiten und Lesen von Emails setzten die Teilnehmer $M_{w}$=1.7 Minuten (Kind war wach) und $M_{s}$=7 Minuten ein (Kind hat geschlafen). Beim Lesen und Anschauen von Printemedien ((Bilder-)Bücher, Magazinen, Zeitungen, Comics, etc.) setzten die Eltern $M_{w}$=5.3 und $M_{s}$=12.5 Minuten ein. Im Internet verbrachten sie $M_{w}$=5.9 und $M_{s}$=19.7 Minuten mit Surfen und Informationen suchen. Musik hörten die Eltern während der Betreuung $M_{w}$=18.6 und $M_{s}$=8.3 Minuten. Sie schauten im Schnitt $M_{w}$=5.4 und $M_{s}$=25.1 Minuten Fernseh oder Videos (TV-Sender, Netflix, DVD, etc.). Der Radio lief während $M_{w}$=34.3 und $M_{s}$=12.9 Minuten. Fotos oder Videos wurden während $M_{w}$=5.1 und $M_{s}$=0.9 Minuten gemacht. Video-Games (Smartphone, Computer, Konsole, etc.) wurden während $M_{w}$=.2 und $M_{s}$=1.5 Minuten gespielt. Hörspiele und Hörbücher wurden während $M_{w}$=1.5 und $M_{s}$=2.1 Minuten gehört. Für eine komplette Auflistung der Mittelwerte nach der Unterteilung ob das Kind geschlafen hat oder wach war, inklusiver Angabe des totalen Mittelwerts bitte Tabelle \ref{fig:AppMedientätigkeit} im Anhang \ref{app:TablesMediennutzung} konsultieren.
+
+\begin{figure}%[htp]
+\caption{Mittelwerte der Medientätigkeiten (wach / schlafend)}\label{fig:Medientätigkeit}
+%\centering
+\begin{tikzpicture}[scale=1]
+  \begin{axis}[
+    xbar stacked,
+    %y axis line style = { opacity = 0 },
+    %axis x line       = none,
+    tickwidth         = 0pt,
+    xmin              = 0,
+    xmax              = 47,
+    enlarge y limits  = 0.08,
+    enlarge x limits  = 0.02,
+    legend pos=south east,
+    ytick             = data,
+    xlabel            = {Mittelwerte $M$ (\textit{Angaben in Minuten})},
+    %height            = 20cm,
+    width             = 13cm,
+    symbolic y coords = {Hörspiele, VideoGames, Fotos, Radio, TV, Musik, Internet, Lesen, Email, SMS, Telefonieren},
+    nodes near coords,
+    nodes near coords align={horizontal},
+  ]
+  %wach
+  \addplot coordinates { (5.2,Telefonieren)(10,SMS)(1.7,Email)(5.3,Lesen)(5.9,Internet)(18.6,Musik)(5.4,TV)(34.3,Radio)(5.1,Fotos)(.2,VideoGames)(1.5,Hörspiele)};
+  
+  %geschlafen
+  \addplot coordinates { (7.2,Telefonieren)(13.8,SMS)(7,Email)(12.5,Lesen)(19.7,Internet)(8.3,Musik)(25.1,TV)(12.9,Radio)(0.9,Fotos)(1.5,VideoGames)(2.1,Hörspiele)};
+  
+  \legend{\text{$M$ wach}, \text{$M$ schlafend}}
+  \end{axis}
+\end{tikzpicture}
+\end{figure}
+
+Neben der Mediennutzung und der Medientätigkeit wurde die Anzahl Geräte im Haushalt erfragt (siehe dazu Tabelle \ref{fig:AppGeräteHaushalt} im Anhang \ref{app:TablesMediennutzung}). Dabei gaben 83.9\% der Teilnehmer an, 2 Smartphones im Haushalt zu besitzen. 70.2\% gaben an, ein TV-Gerät zu besitzen. 45\% der Befragten besitzen 2 Computer (Desktop oder Laptop), 45.9\% ein Tablet und 48.2\% einen Radio (Stereoanlage, CD-Player). 51.4\% gaben an, kein Abo einer Tageszeitung oder eines Magazins aboniert zu haben. 45.9\% gaben an, einen Fotoapparat oder Videokamera zu besitzen. 61\% besitzen keine Spielkonsole und 67\% keinen MP3 Player.
+
+\textit{TBD: Medienverzicht}
 
 \subsubsection{Bindung anhand AAS}
 \textit{TBD: Klassifizierung und Aufteilung in Sicher und Unsicher}.
