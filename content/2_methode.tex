@@ -26,17 +26,17 @@ Bei den soziodemografischen Daten wurden folgende Parameter erfasst: Geschlecht,
 \subsubsection{Medien und Mediennutzung}\label{sec:MedienMediennutzung}
 Die Fragebogenitems wurden basierend auf den Vorlagen der Erhebungsinstrumenten der Studien \citeA{Feierabend2017, Blikk2017, Waller2016, Suter2015, Feierabend2015, Kabali2015} neu erstellt. Dabei stand die Mediennutzungszeit während der Betreuung der Kinder, also die Dauer der Mediennutzung in Minuten und das dazu verwendeten Geräte und Medium im Fokus. Es erfolgte ein Spezifizierung des Frageitems hinsichtlich des betreuten Kindes, ob dieses wach war oder geschlafen hat und hinsichtlich des benutzen Mediums, ob dieses privat oder geschäftlich genutzt wurde. Die Erfassung der Mediennutzungszeit wurde anhand der letzten Betreuungstätigkeit vorgenommen, da davon ausgegangen wurde, dass sich die Befragten am ehesten an die absolute Zeit erinnern konnten. Eine Unterteilung in Tage unter der Woche oder am Wochenende wurde als wenig zielführend erachtet. Für die Beantwortung der Fragestellung hätte bereits die reine Mediennutzungszeit gereicht. Es wurde jedoch als hilfreich erachtet, zusätzliche Parameter zu der reinen Mediennutzungsdauer zu erheben, um gegebenenfalls die Fragestellung detaillierter beantworten zu können. Ein weiterer Grund für die zusätzlichen Fragebogenitems ist hinsichtlich der spärlichen Datenlage im Bereich Mediennutzung von Eltern mit Kleinkindern zu nennen. Erfasst wurden neben dem benutzen Medium und der aufgewendeten Zeit, die im Haushalt vorhanden Geräte und auf welches der benutzen Geräte während der Betreuung am wenigsten verzichtet werden konnte. 
 
-Die Operationalisiserung erfolgte anhand der Summenbildung der verwendeten Medien in Minuten, während denen das Kind betreut wurde (für eine Auflsitung der abgefragten Medien siehe Anhang \ref{app:Fragebogen} im Abschnitt \titleref{sec:app_mediennutzung} unter Mediennutzung). Diese Gesamtsumme der Mediennutzung $MNS_{Total}$ (\ref{eq:MedienTotal}) setzt sich aus den Teilsummen der genutzten  Medien zusammen, an denen das Kind wach war $MNS_{Wach}$ (\ref{eq:MedienWach}) oder geschlafen hat $MNS_{Geschlafen}$ (\ref{eq:MedienGeschlafen}).  
+Die Operationalisiserung erfolgte anhand der Summenbildung der verwendeten Medien in Minuten, während denen das Kind betreut wurde (für eine Auflsitung der abgefragten Medien siehe Anhang \ref{app:Fragebogen} im Abschnitt \titleref{sec:app_mediennutzung} unter Mediennutzung). Diese Gesamtsumme der Mediennutzung $MNS_{Total}$ (\ref{eq:MedienTotal}) setzt sich aus den Teilsummen der genutzten  Medien zusammen, an denen das Kind wach war $MNS_{Wach}$ (\ref{eq:MedienWach}) oder geschlafen hat $MNS_{Geschlafen}$ (\ref{eq:MedienSchlafend}).  
 
 %Formel
 \begin{equation}\label{eq:MedienWach}
     MNS_{Wach}=\sum_{i=1}^{11} i_{Wach}
 \end{equation}
-\begin{equation}\label{eq:MedienGeschlafen}
-    MNS_{Geschlafen}=\sum_{i=1}^{11} i_{Geschlafen}
+\begin{equation}\label{eq:MedienSchlafend}
+    MNS_{Schlafend}=\sum_{i=1}^{11} i_{Schlafend}
 \end{equation}
 \begin{equation}\label{eq:MedienTotal}
-    MNS_{Total}=\sum_{i=1}^{11} i_{Wach} + i_{Geschlafen}
+    MNS_{Total}=\sum_{i=1}^{11} i_{Wach} + i_{Schlafend}
 \end{equation}
 
 \subsubsection{Bindung: Adult Attachment Scale (AAS)}\label{sec:AAS}
@@ -57,6 +57,15 @@ Die Operationalisiserung erfolgte anhand der Indizes für die drei Skalen Nähe,
 \begin{equation}\label{eq:IndexAngst}
     AAS_{Angst}=\frac{AAS_{4}+AAS_{6}+AAS_{7}+AAS_{11}+AAS_{16}}{5}
 \end{equation}
+
+Bezügliche einer besseren Interpretier- und Lesbarkeit können die oben beschriebenen Skalen mittels Skalenrange-Transformation in einen Wertebereich zwischen 0 und 100 transformiert werden. Dies geschieht mit folgender Formel, die stellvertretend für alle obigen Skalen des AAS steht (\ref{eq:AASIndexTrans}):
+
+%Formel
+\begin{equation}\label{eq:AASIndexTrans}
+    AAS_{Trans}=\frac{AAS_{OrigSkala - 1}}{4}*100
+\end{equation}
+
+Dem Mittelwert der zu tranformierenden Formel, die einen Skalenrange von 1 bis 5 hat, wird durch Subtraktion von 1 eine lineare Transformation zu einem Wertebereich 1 bis 4 vorgenommen. Mittels Division durch 4 und anschliessender Multiplikation mit 100 wird eine weitere lineare Transformation zu einem Wertebereich von 0 bis 100 vorgenommen.
 
 Wie bereits oben beschrieben, lassen sich gemäss \citeA{Schmidt2004} mit dem deutschen Instrument die Bindungsstile nicht direkt zuordnen, sondern in zugrunde liegende Dimensionen einteilen \cite{Schuetzmann2004}. Anhand den Ausprägungen der Probanden in den drei Skalen lassen sich drei Cluster definieren: Im Cluster \textit{sicher} sind Probanden mit hohen Werten bei den Skalen Nähe und Vertrauen und niedrige Werte bei der Skala Angst enthalten. Das Cluster \textit{ängstlich} beinhaltet Probanden mit hohen Werten bei der Skala Angst und mittlere Werte bei den Skalen Nähe und Vertrauen. Im dritten Cluster \textit{vermeidend} befinden sich Probanden, die auf allen drei Skalen Nähe, Vertrauen und Angst tiefe Werte aufweisen.
 
