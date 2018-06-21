@@ -85,16 +85,37 @@ Bindungsstil, Stress und Wohlbefinden - Faktoren des Medienverhaltens von Eltern
 %\pagenumbering{arabic}
 \pagenumbering{Roman}
 \appendix 
-\renewcommand{\appendixname}{Anhang} 
+\renewcommand{\appendixname}{Anhang}
+\renewcommand\appendixtocname{Anhang}
+\renewcommand{\appendixpagename}{Anhang}
+%\appendixpage % fügt eine extra Seite mit Überschrift hinzu
+\addappheadtotoc
+%\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+
 
 % Stichprobe
 \section{Gesamtstichprobe}\label{app:Gesamtstichprobe}
 \input{content/Anhang/Stichprobe.tex}
 \newpage
 
-% Tabellen Mediennutzung
-\section{Tabellen und Grafiken Mediennutzung}\label{app:TablesMediennutzung}
-\input{content/Anhang/TabellenMediennutzung.tex}
+% Mediennutzung
+\section{Mediennutzung}\label{app:Mediennutzung}
+\input{content/Anhang/Mediennutzung.tex}
+\newpage
+
+% Medientätigkeit
+\section{Medientätigkeit}\label{app:Medientätigkeit}
+\input{content/Anhang/Medientaetigkeit.tex}
+\newpage
+
+% Mediengeräte im Haushalt
+\section{Mediengeräte im Haushalt}\label{app:Mediengeräte}
+\input{content/Anhang/MedienGeraete.tex}
+\newpage
+
+% Medienverzicht
+\section{Medienverzicht}\label{app:Medienverzicht}
+\input{content/Anhang/Medienverzicht.tex}
 \newpage
 
 % Tabellen AAS
