@@ -25,6 +25,7 @@
 \geometry{top=25.4mm, left=25.4mm, right=25.4mm, bottom=25.4mm}
 \usepackage{appendix}
 \usepackage{nicefrac} % Darstellung von Brüchen im Text e.g. 1/2
+\usepackage{listings} % Darstellung von SW-Code
 
 
 % Für Verweise innerhalb Doc (siehe https://strobelstefan.org/?p=145) -> funktioniert nicht mich package hyperref!
@@ -41,3 +42,24 @@
     
 % Flattersatz ohne die Titel zu beeinflussen
 \setlength{\RaggedRightParindent}{\parindent}
+% Color Def für SW Code
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  frame=single
+}
