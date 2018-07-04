@@ -9,24 +9,56 @@ Bindungsstil, Stress und Wohlbefinden - Faktoren des Medienverhaltens von Eltern
 
 \include{content/0_abstract.tex}
 
+\makenoidxglossaries % use TeX to sort
+\loadglsentries{content/glossar.tex}
+
 \begin{document}
+\RaggedRight
 
+\pagenumbering{gobble} % -> Keine Seitenzahlen bis TOC
 
-%PDF Vorlageblat
-%\includepdf{pdf/Masterarbeit_Disposition_ERNST_Till_flat.pdf}
+%PDF Vorlageblatt
+\includepdf{content/PDF/Titel.pdf}
+\includepdf{content/PDF/Titel2.pdf}
+
+% Danksagung
+\section*{Danksagung}\label{sec:Danksagung}
+\input{content/000_danksagung.tex}
+\newpage
+
+%Abstract
+\section*{Abstract}\label{sec:Abstract}
+\input{content/00_abstract.tex}
+\newpage
 
 %\maketitle % für Disposition weglassen
 
 % Inhaltsverzeichnis
+\setcounter{page}{1}
+\pagenumbering{Roman}
+%\renewcommand*\contentsname{\hfill Inhalt \hfill}
+%\maxtocdepth{section}
+\tableofcontents
+\newpage
 
 % Abbildungsverzeichnis? nicht nach DGP
+\listoffigures
+\newpage
 
 % Tabellenverzeichnis? nicht nach DGP
+\listoftables
+\newpage
 
-% Abkürzungsverzeichnis? nicht nach DGP
+% Abkürzungsverzeichnis nicht nach DGP
+\printnoidxglossary[sort=word, title={Abkürzungsverzeichnis}]% list all entries
+\newpage
 
-% Theorie
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+% Einleitende Theorie
 \section{Theorie}\label{sec:Theorie}
+\input{content/0_Einleitung.tex}
 \input{content/1_theorie.tex}
 
 % Methode
@@ -47,9 +79,97 @@ Bindungsstil, Stress und Wohlbefinden - Faktoren des Medienverhaltens von Eltern
 \bibliography{library}{}
 \end{flushleft}
 
+\newpage
+
 % Anhang
+%\pagenumbering{arabic}
+\pagenumbering{Roman}
+\appendix 
+\renewcommand{\appendixname}{Anhang}
+\renewcommand\appendixtocname{Anhang}
+\renewcommand{\appendixpagename}{Anhang}
+%\appendixpage % fügt eine extra Seite mit Überschrift hinzu
+\addappheadtotoc
+%\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+
+
+% Stichprobe
+\section{Gesamtstichprobe}\label{app:Gesamtstichprobe}
+\input{content/Anhang/Stichprobe.tex}
+\newpage
+
+% Mediennutzung
+\section{Mediennutzung}\label{app:Mediennutzung}
+\input{content/Anhang/Mediennutzung.tex}
+\newpage
+
+% Medientätigkeit
+\section{Medientätigkeit}\label{app:Medientätigkeit}
+\input{content/Anhang/Medientaetigkeit.tex}
+\newpage
+
+% Mediengeräte im Haushalt
+\section{Mediengeräte im Haushalt}\label{app:Mediengeräte}
+\input{content/Anhang/MedienGeraete.tex}
+\newpage
+
+% Medienverzicht
+\section{Medienverzicht}\label{app:Medienverzicht}
+\input{content/Anhang/Medienverzicht.tex}
+\newpage
+
+% Tabellen AAS
+\section{Tabellen Bindung}\label{app:TablesAas}
+\input{content/Anhang/TabellenAAS.tex}
+\newpage
+
+% Tabellen PSQ
+\section{Tabellen Stress}\label{app:TablesPsq}
+\input{content/Anhang/TabellenPSQ.tex}
+\newpage
+
+% AAS Fragebogen
+\section{Die Adult Attachment Scale (AAS)}\label{app:AAS}
+\input{content/Anhang/AAS.tex}
+\newpage
+
+% PSQ Fragebogen
+\section{Perceived Stress Questionnaire (PSQ)}\label{app:PSQ}
+\input{content/Anhang/PSQ.tex}
+\newpage
+
+% SHS Fragebogen
+\section{Subjective Happiness Scale (SHS)}\label{app:SHS}
+\input{content/Anhang/SHS.tex}
+\newpage
+
+% Fragebogen
+\section{Fragebogen}\label{app:Fragebogen}
+\input{content/Anhang/Umfragebogen.tex}
+\newpage
+
+% Mailing
+\section{Mailing}\label{app:Mailing}
+\input{content/Anhang/Mailing.tex}
+\newpage
+
+% Flyer für die Rekrutierung
+\section{Flyer}\label{app:Flyer}
+\input{content/Anhang/Flyer.tex}
+\newpage
+
+% Rekrutierung
+\section{Rekrutierung}\label{app:Rekrutierung}
+\input{content/Anhang/Rekrutierung.tex}
+\newpage
+
+% Wettbewerb
+\section{Wettbewerb}\label{app:Wettbewerb}
+\input{content/Anhang/Wettbewerb.tex}
+\newpage
 
 % Ehrenwörtliche Erklärung
+\includepdf{content/PDF/EhrenwSigned.pdf}
 
 \end{document}
 

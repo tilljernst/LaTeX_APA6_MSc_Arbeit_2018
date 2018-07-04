@@ -1,0 +1,43 @@
+\subsection*{Swift 4.0 Code für die randomiesierte Ziehung}
+
+\begin{lstlisting}
+import UIKit
+for i in 0 ..< 10 {
+    print ("Gewinner \(i)", arc4random_uniform(159))
+}
+\end{lstlisting}
+
+Dabei ist zu beachten dass $N$=159 beim Wettbewerb mitgemacht haben.
+
+\subsection*{Gewinner anhand Personen-ID}
+\begin{itemize}
+    \item Gewinner 0: 20
+    \item Gewinner 1: 147
+    \item Gewinner 2: 124
+    \item Gewinner 3: 4
+    \item Gewinner 4: 114
+    \item Gewinner 5: 35
+    \item Gewinner 6: 86
+    \item Gewinner 7: 106
+    \item Gewinner 8: 64
+    \item Gewinner 9: 154
+\end{itemize}
+
+\subsection*{Mailing an Gewinner}
+\begin{flushleft}
+\textit{Betreff:}
+Sie haben bei der Elternumfrage gewonnen
+
+\textit{Inhalt:}
+Liebe Gewinnerin, lieber Gewinner
+
+Vor einiger Zeit haben Sie an der Elternumfrage meiner Masterarbeit der ZHAW teilgenommen. Vielen Dank dafür. 
+
+Sie wurden als glückliche Gewinnerin/Gewinner ausgewählt und erhalten einen Gutschein im Wert von CHF 50.- des online Shops Baby-Rose.
+
+Dazu bitte ich Sie, mir Ihre vollständige Postanschrift zukommen zu lassen, damit ich Ihnen via Baby-Rose den Gutschein aushändigen kann.
+
+Vielen Dank und beste Grüsse
+
+Till ERNST
+\end{flushleft}
