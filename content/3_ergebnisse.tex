@@ -166,12 +166,12 @@ Der Indexwert der Subjective Happiness Scale (\acrshort{shs}) $SHS~I$ beläuft s
 
 % ---------------------------------------
 \subsection{Hypothesentest} \label{sec:Hypothesentest}
-In diesem Kapitel werden die Hypothesen eins bis vier der Reihe nach überprüft. Die für die Prüfung der Voraussetzung der einzelnen Berechnungsvarianten notwendigen Grafiken (z.B. Histogramme und Q-Q-Plots) wurden aus Platzgründen in den Anhang verschoben (siehe Anhang \ref{app:Hypothesentest_1}).
+In diesem Kapitel werden die Hypothesen eins bis vier der Reihe nach überprüft. Die für die Prüfung der Voraussetzung der einzelnen Berechnungsvarianten notwendigen Grafiken (z.B. Histogramme und Q-Q-Plots) wurden aus Platzgründen in den Anhang verschoben (siehe Anhang \ref{app:Hypo1_Histogramme}ff).
 
 \subsubsection{Hypothesentest 1}\label{sec:Hypothesentest1}
-Für die Überprüfung der Hypothese 1 wurde eine einfaktoriellen Varianzanalyse berechnet, um zu untersuchen, ob es einen Unterschied in der Mediennutzung abhängig zur Bindung gab. Die Bindung wurde in zwei Gruppen unterteilt: Gruppe sicher Gebundene ($N$=144, $M$=199.09, $SD$=179.017) und unsicher Gebundene ($N$=60, $M$=209.316, $SD$=165.701). Die Prüfung auf Normalveteilung mittels Shapiro-Wilks-Test \cite{Shapiro1965} viel signifikant aus (Shapiro-Wilks-Test $p_{sicher}$ = .000, $p_{unsicher}$ = .000 bei $\alpha$ = .05). Der Sichtvergleich mittels Histogramm und Q-Q-Plots zeigten ein ähnliches Bild (siehe Anhang \ref{app:Hypothesentest_1}). Somit kann von einer Abweichung von der Normalverteilung ausgegangen werden \cite{Hemmerich2018} und eine Voraussetzung der einfaktoriellen Varianzanalyse ist verletzt. Gemäss \citeA{UniversitatZurich2018} sind Verletzungen ab einer Gruppe von 25 Probanden in der Regel unproblematisch. Da sich die Gruppe sichererer Probanden aus $N$=144 und die Gruppe unsicher Probanden aus $N$=60 zusammensetzten, wurde die Berechnung weiter geführt.
+Für die Überprüfung der Hypothese 1 wurde eine einfaktoriellen Varianzanalyse berechnet, um zu untersuchen, ob es einen Unterschied in der Mediennutzung abhängig zur Bindung gab. Die Bindung wurde in zwei Gruppen unterteilt: Gruppe sicher Gebundene ($N$=144, $M$=199.09, $SD$=179.017) und unsicher Gebundene ($N$=60, $M$=209.316, $SD$=165.701). Die Prüfung auf Normalveteilung mittels Shapiro-Wilks-Test \cite{Shapiro1965} viel signifikant aus (Shapiro-Wilks-Test $p_{sicher}$ = .000, $p_{unsicher}$ = .000 bei $\alpha$ = .05). Der Sichtvergleich mittels Histogramm und Q-Q-Plots zeigten ein ähnliches Bild (siehe Anhang \ref{app:Hypo1_Histogramme} und \ref{app:Hypo1_QQDiagramme}). Somit kann von einer Abweichung von der Normalverteilung ausgegangen werden \cite{Hemmerich2018} und eine Voraussetzung der einfaktoriellen Varianzanalyse ist verletzt. Gemäss \citeA{UniversitatZurich2018} sind Verletzungen ab einer Gruppe von 25 Probanden in der Regel unproblematisch. Da sich die Gruppe sichererer Probanden aus $N$=144 und die Gruppe unsicher Probanden aus $N$=60 zusammensetzten, wurde die Berechnung weiter geführt.
 
-Gemäss Boxplot wurden zudem Ausreisser im Datensatz festgestellt (siehe Anhang \ref{app:Hypothesentest_1}). Für die Gruppe unsicher Gebundenen kann ein Fall mit der Id 38 identifiziert werden, der 1.5 Standardabweichungen vom Mittelwert entfernt ist. Bei der Gruppe sicher Gebunden waren es sieben Fälle (12, 30, 39, 48, 115, 165, 205). Die Varianzanalyse ist gegenüber Ausreissern nur bedingt robust \cite{Hemmerich2018}. Das es sich in diesem Fall um leichte Ausreisser handelte, wurden sie im Datensatz belassen und die Berechnung mit ihnen weitergeführt.  
+Gemäss Boxplot wurden zudem Ausreisser im Datensatz festgestellt (siehe Anhang \ref{app:Hypo1_Boxplot}). Für die Gruppe unsicher Gebundenen kann ein Fall mit der Id 38 identifiziert werden, der 1.5 Standardabweichungen vom Mittelwert entfernt ist. Bei der Gruppe sicher Gebunden waren es sieben Fälle (12, 30, 39, 48, 115, 165, 205). Die Varianzanalyse ist gegenüber Ausreissern nur bedingt robust \cite{Hemmerich2018}. Das es sich in diesem Fall um leichte Ausreisser handelte, wurden sie im Datensatz belassen und die Berechnung mit ihnen weitergeführt.  
 
 Die Überprüfung der Varianzhomogenität erfolgte mit dem Levene-Test, gemäß dem wir eine Gleichheit der Varianzen annehmen können (Levene-Test; $p$ = .683). 
 
@@ -180,17 +180,40 @@ Der Hypothesentest für Hypothese 1 mittels ANOVA liefert ein nicht-signifikante
 \subsubsection{Hypothesentest 2}
 Für die Überprüfung der Hypothese 2 wurde eine einfache lineare Regression durchgeführt, um zu untersuchen, inwiefern sich die Mediennutzung (Kriterium) durch den Prädiktor Stress vorhersagen lässt.
 
-Für die Prüfung der linearen Beziehung zwischen der abhängigen und der unabhängigen Variable wurde ein Streudiagramm erstellt (siehe \textit{Abbildung \nameref{fig:AppStreudiagrammMedienPsq}} in Anhang \ref{app:Hypothesentest_1}). Darin ist praktisch keine Beziehung zwischen den Variablen zu erkennen.
+Für die Prüfung der linearen Beziehung zwischen der abhängigen und der unabhängigen Variable wurde ein Streudiagramm erstellt (siehe Anhang \ref{app:Hypo2_Streudiagramm}  \textit{Abbildung: \nameref{fig:AppStreudiagrammMedienPsq}} ). Darin ist praktisch keine Beziehung zwischen den Variablen zu erkennen. Aus diesem Grund wurde für die weitere Berechnung eine Kurvenanpassung vorgenommen (quadratisch und kubisch). Dadurch wurde der Zusammenhang der Regressionsanalyse transformiert, wodurch er linear wird \cite{UniversitatZurich2018}.
 
-Der Hypothesentest für die Hypothese 2 mittels einfacher linearer Regression liefert ein nicht signifikantes Ergebnis. Das Stressempfinden der Eltern geht somit nicht mit einer höheren Mediennutzung einher (F(1,202) = .389, $p$=.533). Die Nullhypothese $H2_{0}$ muss angenommen werden.
+Für die Prüfung der Gauss-Markov-Annahme 3 \cite{UniversitatZurich2018} wurde ein Streudiagramm der standardisierten, geschätzten Werte von y (auf der x-Achse) und der standardisierten Fehlerwerte (Residuen auf der y-Achse) erstellt (siehe Anhang \ref{app:Hypo2_Streudiagramm} \textit{Abbildung: \nameref{fig:AppStreudiagrammResiduen}}). Anhand von diesem Diagramm wurde visuell geprüft, ob über den gesamten Wertebereich der geschätzte Wert der Fehler im Mittel 0 beträgt. Dies ist in etwa der Fall, dabei gleichen sich die negativen und positiven Abweichungen von 0 auf der y-Achse im Mittel aus. 
+
+Die Prüfung der Varianzgleichheit oder auch Homoeskedastizität (Gauss-Markov-Annahme 5) wurde im oben bereits genannten Streudiagramm der standardisierten Fehlerwerte durchgeführt. Dabei liegen die Punkte mehr oder weniger gleichmässig über die horizontale Achse verteilt \cite{Hemmerich2018} und die Annahme ist gegeben.
+
+Zudem wird in diesem Datenset davon ausgegangen, dass die Fehlerwerte nicht voneinander abhängen, somit Unabhängigkeit des Fehlerwerts vorherrscht (vgl. oben genannten Streudiagramm).
+
+Die Prüfung der Normalverteilung des Fehlerwerts wurde anhand eines Histogramms visuell geprüft (siehe Anhang \ref{app:Hypo2_Histogramm} \textit{Abbildung: \nameref{fig:AppHistogrammResiduen}}). Dabei kann von einer Verletzung dieser Voraussetzung ausgegangen werden. Das Modell wurde trotzdem weitergeführt.
+
+Insgesamt wurden alle Voraussetzungen als mehr oder weniger akzeptabel eingeschätzt. Wobei bei der linearen Beziehung zusätzlich eine Kurvenanpassung quadratisch und kubisch vorgenommen wurde.
+
+Der Hypothesentest für die Hypothese 2 mittels einfacher linearer Regression liefert ein nicht signifikantes Ergebnis. Das Stressempfinden der Eltern geht somit nicht mit einer höheren Mediennutzung einher (F(1,202) = .396, $p$=.530). Die quadratische Kurvenanpassung ergab ein etwas besseres Bild, jedoch ein ebenso nicht signifikantes Ergebnis (F(2,201) = 3.085, $p$=.048). Dies konnte auch in der kubischen Kurvenanpassung festgestellt werden (F(3,200) = 2.707, $p$=.046). Siehe dazu auch Anhang \ref{app:Hypo2_Streudiagramm} \textit{Abbildung: \nameref{fig:AppHypo2StreudiagrammKurvenanpassung}}. Die Nullhypothese $H2_{0}$ muss somit angenommen werden.
 
 \subsubsection{Hypothesentest 3}
 Für die Überprüfung der Hypothese 2 wurde eine einfache lineare Regression durchgeführt, um zu untersuchen, inwiefern sich das subjektive Wohlbefinden (Kriterium) durch den Prädiktor Mediennutzung vorhersagen lässt.
 
+
+Für die Prüfung der linearen Beziehung zwischen der abhängigen und der unabhängigen Variable wurde ein Streudiagramm erstellt (siehe Anhang \ref{app:Hypo3_Streudiagramm}  \textit{Abbildung: \nameref{fig:AppHypo3Streudiagramm}}). Darin kann von einer leichten linearen Beziehung ausgegangen werden.
+
+Für die Prüfung der Gauss-Markov-Annahme 3 \cite{UniversitatZurich2018} wurde ein Streudiagramm erstellt (siehe Anhang \ref{app:Hypo3_Streudiagramm} \textit{Abbildung: \nameref{fig:AppHypo3StreudiagrammResiduen}}. Die Annahme wurde als gegeben eingeschätzt. 
+
+Die Prüfung der Varianzgleichheit oder auch Homoeskedastizität (Gauss-Markov-Annahme 5) wurde im oben bereits genannten Streudiagramm der standardisierten Fehlerwerte durchgeführt. Es scheint, als ob die Punkte auf der horizontalen Achse auf der linken Seite verdichtet zu liegen kommen \cite{Hemmerich2018}. Diese Annahme wäre verletzt und nicht gegeben. Das Modell wurde trotzdem fortgeführt.
+
+Zudem wird in diesem Datenset davon ausgegangen, dass die Fehlerwerte nicht voneinander abhängen, somit Unabhängigkeit des Fehlerwerts vorherrscht (vgl. oben genannten Streudiagramm).
+
+Die Prüfung der Normalverteilung des Fehlerwerts wurde anhand eines Histogramms visuell geprüft (siehe Anhang \ref{app:Hypo3_Histogramm} \textit{Abbildung: \nameref{fig:AppHistogrammResiduen}}) und als gegeben eingestuft.
+
+Insgesamt wurden alle Voraussetzungen als mehr oder weniger akzeptabel eingeschätzt.
+
 Der Hypothesentest für die Hypothese 3 mittels einfacher linearer Regression liefert ein nicht signifikantes Ergebnis. Es gibt keinen statistischen Zusammenhang zwischen dem Stressempfinden und dem subjektiven Wohlbefinden der Stichprobe (F(1,202) = 1.837, $p$=.177).  Die Nullhypothese $H3_{0}$ muss angenommen werden.
 
 \subsubsection{Hypothesentest 4}
-Für die Überprüfung der Hypothese 4 wurde eine einfaktoriellen Varianzanalyse berechnet, um zu untersuchen, ob es einen Unterschied in der Mediennutzung abhängig zur Bindung und dem Stress gab. WIe in Hypothes 1 wurde die Bindung in zwei Gruppen unterteilt: Gruppe sicher Gebundene ($N$=144, $M$=199.09, $SD$=179.017) und unsicher Gebundene ($N$=60, $M$=209.316, $SD$=165.701). Da sich die Hypothesen 1 und vier in der Berechnung ähnlich sind, wurde bei der Prüfung der Voraussetzungen für die einfaktorielle Varianzanalyse ähnlich Probleme festgestellt (siehe dazu Abschnitt \nameref{sec:Hypothesentest1}). Da es sich um die selben Variablen handelt wie bei Hypothese 1, mit Zugabe der Kovariate Stress, wurde das Modell unter Begründung der Gruppengrösse weiter gerechnet. 
+Für die Überprüfung der Hypothese 4 wurde eine einfaktoriellen Varianzanalyse berechnet, um zu untersuchen, ob es einen Unterschied in der Mediennutzung abhängig zur Bindung und dem Stress gab. Analog Hypothes 1 wurde die Bindung in zwei Gruppen unterteilt: Gruppe sicher Gebundene ($N$=144, $M$=199.09, $SD$=179.017) und unsicher Gebundene ($N$=60, $M$=209.316, $SD$=165.701). Da sich die Hypothesen 1 und vier in der Berechnung ähnlich sind, wurde bei der Prüfung der Voraussetzungen für die einfaktorielle Varianzanalyse ähnlich Probleme festgestellt (siehe dazu Abschnitt \nameref{sec:Hypothesentest1}). Da es sich um die selben Variablen handelt wie bei Hypothese 1, mit Zugabe der Kovariate Stress, wurde das Modell unter Begründung der Gruppengrösse weiter gerechnet. 
 
 Die Überprüfung der Varianzhomogenität erfolgte mit dem Levene-Test, gemäß dem wir eine Gleichheit der Varianzen annehmen können (Levene-Test; $p$ = .708). 
 
@@ -200,18 +223,13 @@ Der Hypothesentest für Hypothese 4 mittels ANOVA liefert ein nicht-signifikante
 \subsection{TBD: Zusätzliche Analysen} \label{sec:ZusätzlicheAnalysen}
 
 \begin{itemize}
+    \item Ev. bei Hypo 2 und 3 zusätzlich Kurvenanpassung vornehmen und Log und Kubisch einfliessen lassen (siehe Berechnung in Syntaxfile).
     \item Medienverhalten der Eltern wenn Kind schläft und wach ist -> Zusammenhang auf die Bindung.
     \item Medienverhalten nach Gebiet unterteilen -> smartphone tätigkeiten.
     \item Ergebnisse anhand W M unterteilen. -> generell die demographischen Daten einbeziehen.
 \end{itemize}
 
 
-
-\begin{itemize}
-    \item Q-Q-Plot im Anhang
-    \item Streudiagramm im Anhang
-    \item Histrogramm im Anhang
-\end{itemize}
 
 
 
