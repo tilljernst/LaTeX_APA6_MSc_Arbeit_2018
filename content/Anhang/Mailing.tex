@@ -40,3 +40,61 @@ Till ERNST
 Stud. MSc in angewandter klinischer Psychologie
 
 \end{flushleft}
+
+Zusätzlich zum Schreiben wurde dem Mailing ein Flyer angehängt. Dieser wurde auch in Papierform ausgedruckt und aufgelegt.
+
+
+\begin{figure}[h]
+  \centering
+     \includegraphics[scale=0.9,angle=90]{content/Grafik/Flyer_Umfrage_v2.pdf}
+  \caption{Flyer für die Umfrage}
+  \label{fig:flyer}
+\end{figure}
+
+\newpage
+
+Für die Auswertung des Wettbewerbs wurden die Teilnehmer randomisiert gezogen. Unten aufgeführt ist das dazu verwendete SWIFT-Skript, die gezogenen Teilnehmer anhand ihrer ID und das versendete Gewinnerschreiben.
+
+\subsection*{Swift 4.0 Code für die randomiesierte Ziehung}
+
+\begin{lstlisting}
+import UIKit
+for i in 0 ..< 10 {
+    print ("Gewinner \(i)", arc4random_uniform(159))
+}
+\end{lstlisting}
+
+Dabei ist zu beachten dass $N$=159 beim Wettbewerb mitgemacht haben.
+
+\subsection*{Gewinner anhand Personen-ID}
+\begin{itemize}
+    \item Gewinner 0: 20
+    \item Gewinner 1: 147
+    \item Gewinner 2: 124
+    \item Gewinner 3: 4
+    \item Gewinner 4: 114
+    \item Gewinner 5: 35
+    \item Gewinner 6: 86
+    \item Gewinner 7: 106
+    \item Gewinner 8: 64
+    \item Gewinner 9: 154
+\end{itemize}
+
+\subsection*{Mailing an Gewinner}
+\begin{flushleft}
+\textit{Betreff:}
+Sie haben bei der Elternumfrage gewonnen
+
+\textit{Inhalt:}
+Liebe Gewinnerin, lieber Gewinner
+
+Vor einiger Zeit haben Sie an der Elternumfrage meiner Masterarbeit der ZHAW teilgenommen. Vielen Dank dafür. 
+
+Sie wurden als glückliche Gewinnerin/Gewinner ausgewählt und erhalten einen Gutschein im Wert von CHF 50.- des online Shops Baby-Rose.
+
+Dazu bitte ich Sie, mir Ihre vollständige Postanschrift zukommen zu lassen, damit ich Ihnen via Baby-Rose den Gutschein aushändigen kann.
+
+Vielen Dank und beste Grüsse
+
+Till ERNST
+\end{flushleft}
